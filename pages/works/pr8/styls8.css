@@ -1,0 +1,108 @@
+body {
+	margin-left: 20%;
+    margin-right: 20%;
+}
+.wraper {
+	color: chocolate;
+	border: 1px solid orange;
+}
+header {
+	background: orange;
+	text-align: left;
+	height: 40px;
+}
+.nav1 li {
+    display: inline-block; /*Чтобы меню шло в одну строку*/
+	background-color: orange; 
+	padding-top: 10px;
+}
+.nav1 li a {
+	padding: 16px;
+}
+.nav1 li a:hover {
+	background: white;
+	color: black;
+}
+.nav1 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+    text-decoration: none; /*Не подчеркивать меню*/
+	color:aliceblue; /*Цвет текста в меню черный*/
+}
+
+h1 {
+	color:saddlebrown;
+	font-size: 25px;
+	text-align: center;
+}
+
+h2 {
+	color:saddlebrown;
+	text-align: center;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+a {
+	color:saddlebrown;
+}
+p {
+    text-indent: 50px;
+    line-height: 33px;
+    text-align: justify; /*Выравнять текст по ширине*/
+    margin: 0;
+    font-size: 16px;
+    padding: 0 10px;
+	
+}
+footer {
+    text-align: center;
+}
+footer a {
+	padding: 5px 0;
+	margin-left: 5px;
+    text-decoration: none; /*Не подчеркивать меню*/
+	color:saddlebrown /*Цвет текста*/
+}
+footer li {
+	padding: 5px 0;
+	margin-left: 5px;
+    display: inline-block; 
+    list-style: none
+}
+/*2 часть*/
+h3 {
+	font-family: 'Roboto', sans-serif; /*Подключение шрифта Roboto*/
+	src: local('Roboto');
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+.news {
+	font-family: 'Roboto', sans-serif; /*Подключение шрифта Roboto*/
+	src: local('Roboto');
+}
+.new1, .new2, .new3 { /*Три новости*/
+	border: 1px solid black; /*Рамка*/
+	margin-bottom: 20px;
+	padding: 30px;
+	padding-top: 5px;
+	padding-bottom: 50px;
+}
+img {
+	float: left;
+	margin: 10px 10px 0px 10px;
+}
+.new1 a, .new2 a, .new3 a{
+	color: blue;
+	float: right;
+	text-decoration: none;
+}
+.news p {
+	text-indent: 0px; /*Без красной строки*/
+}
+

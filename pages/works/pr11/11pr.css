@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Rust;
+    src: url(fonts/ofont.ru_Zing\ Rust.ttf); /*подключение инородного шрифта для названия магазина*/
+}
+body {
+    background-color: #050525;
+    height: 1000px;
+    margin: 0px; /* Убирает отступы по краям страницы */
+}
+header { /*фотография по сути*/
+    background: linear-gradient(180deg, rgba(50, 34, 67, 0.8) 10%, rgba(50, 34, 67, 0) 30%), url(img/header.jpg); /*градиент сразу на фото*/
+    background-size: cover; /*растянуть по всей шапке*/
+    height: 78%; 
+}
+.headercontent { /* меню с лого и названием*/
+    color: rgb(182, 0, 36); /*Цвет текста*/
+    background-color: #050525;
+    position: fixed;
+    display: flex; /*Ставит логотип и меню в одну строку*/
+    align-items: center; /*Выравнивает относительно вертикали*/
+    width: 100%; /*Растягивает панель на всю ширину экрана*/
+    z-index: 100; /*чтоб точно был выше всего контента*/
+}
+.logoandh1 { /*лого и название*/
+    display: flex; /*В одну строку горизонтально*/
+    align-items: center; /*Выровнять по вертикали*/
+    gap: 10%; /*расстояние между лого и названием*/
+    margin-left: 2%;
+}
+.logoandh1 img { /*только лого*/
+    width: 80px;
+    margin: 18px 0; /*Отступ сверху и снизу 18, а вправа слева 0*/
+}
+h1 { /*Только название магазина*/
+    font-family: Rust; /*название инородного шрифта*/
+    color: deeppink;
+    font-size: 40px;
+    margin: 10px 0; /*Внешний отступ сверху и снизу 10, слева справа 0*/
+} 
+nav {
+    margin-left: auto; /*Прижимает вправо */
+    margin-right: 50px; /* Добавляет отступ справа */
+}
+li { /*Пункты меню*/
+    display: inline; /*В одну строку*/
+    list-style-type: none; /*Убрать маркеры списка*/
+    margin-right: 50px; /*Расстояние между пунктами*/
+}
+a { /*Сам текст ссылки*/
+    text-decoration: none; /*Убрать подчеркивание*/
+    color: azure;
+    font-weight: bold;
+}
+main {
+    background-color: #050525;
+    color: azure;
+    padding: 20px;
+    padding-bottom: 0;
+}
+main h2 { /*заголовок Тёплая коллекция*/
+    text-align: center;
+    font-size: 36px;
+    margin-top: 120px; /*Чтоб панель меню не закрыла*/
+    margin-bottom: 40px;
+}
+.tovars { /*Карточки*/
+    display: flex; /*тут просто вкл флекс бокс режим чтоб свойства ниже рбаотали*/
+    flex-wrap: wrap; /*Карточки могут переноситься на следующую строку если не вемщаются*/
+    justify-content: center; /*Центрирует карточки внутри контейнера*/
+    gap: 50px; /* расстояние между карточками*/
+    max-width: 1200px; /* Контейнер не станет шире 1200px */
+    margin: 0 auto; /*Центрирование самого контейнера, пополам слева и справа*/
+    align-items: stretch;  /*дочерние эл растягиваются до высоты самой длинной*/
+}
+article { /*карточки товаров*/
+    width: 280px; /*чтоб был одинаковые*/
+    background-color: rgba(255, 255, 255, 0.1); /*Подложка*/
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.9); /*Тень под карточками */
+    display: flex;           /*Включить флекс*/
+    flex-direction: column;  /* Элементы вертикально */
+}
+.img {
+    position: relative; /* Контейнер становится точкой отсчёта */
+}
+.img img {
+    width: 100%; /*На всю ширину контейнера img*/
+    height: 280px;
+    object-fit: cover; /*обрезать картинку вне рамки сохраняя пропорции*/
+    border-radius: 10px;
+    display: block; /*убирает призрачный отступ снизу у картинки*/
+}
+.category { /*Сам флажок*/
+    position: absolute; /* Флажок привязывается к контейнеру */
+    top: 10px; 
+    right: 5px; 
+    color: white;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.category.bottom { /*Нижний флажкок*/
+    left: auto;
+    top: 60px;
+    right: 5px; 
+    background-color: #4CAF50;
+}
+.sale { /*обычные флажки*/
+    background: #00b4d8;
+}
+.new { /*один зеленый флажок нетакуся*/
+    background: #4CAF50;
+}
+article h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color:azure;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+    margin: 10px 0;
+}
+.old-price { /*Зачеркнутая цена у третьей карточки*/
+    font-size: 16px;
+    color:deeppink;
+    text-decoration: line-through;  /*Зачеркнуто*/
+    margin-left: 10px;
+}
+article p {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #ddd;
+}
+.button-group { /*Обертка для кнопок в корзину и лайк*/
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.basket { /*Кнопка в корзину*/
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80%;
+}
+.basket:hover { /*При наведении мыши*/
+    background-color:darkblue;
+}
+.like {
+    background-color: transparent; /*прозрачность внутри*/
+    color: white;
+    border: 2px solid #00b4d8; /*сплошная*/
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer; /*поменять курсор на ручку*/
+    font-size: 18px;
+    width: 20%;
+}
+
+.like:hover {
+    background-color: #00b4d8;
+}
+.button-group {
+    margin-top: auto;/*Прижать вниз*/
+    display: flex; /*в одну строку*/
+    gap: 10px; /*расстояние между кнопками*/
+}
+footer {
+    background-color: #050525;
+    padding: 50px 20px;
+    margin-top: 80px;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+.footer-content p {
+    margin: 10px 0;
+}

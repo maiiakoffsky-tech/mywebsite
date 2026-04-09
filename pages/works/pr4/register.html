@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--Объявляем хтмл-->
+<html lang="ru"> <!--Объявляем что сайт на русском-->
+<head> <!--Служебный блок-->
+    <meta charset="UTF-8"> <!--Задает кодировку символов-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Обеспечивает работу браузера в режиме отображения страниц-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Настройки показа контента-->
+    <title>Никитина: Мои работы</title> <!--Заголовок страницы-->
+    <link rel="stylesheet" href="../../../style/style.css"> <!--Подключение стилей-->
+</head>
+<body>
+    <header> <!--Шапка-->
+        <div class="contact">
+              <ul>
+                <li><img src="../../../img/phone.png" height="18"><a href="tel: +772387232">+772387232</a></li>
+                <li><img src="../../../img/tg.png" height="18"><a href="https://t.me/+h60jPxKUJJEzZmEy">Мой канальчик в телеге</a></li>
+                <li><img src="../../../img/mail.png" height="18"><a href="mailto:Vol-sistem1@yandex.ru">Написать письмо</a></li>
+            </ul>
+        </div> 
+        <h1>Персональный сайт Никитиной Майи</h1> <!--Название сайта-->
+        <nav>
+            <ul class="menu">  <!--Ненумерованный список-->
+                <li><a href="../../../index.html">Главная</a></li>
+                <li><a href="../../news.html">Новости</a></li>
+                <li><a href="../personal.html">Личный кабинет</a></li>
+                <li><a href="../work.html">Мои работы</a></li>
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul> 
+        </nav>
+    </header> 
+        <div class="add">  <!--Стартовый блок-->
+            <p>Стартовый блок с картинкой и призывом</p>
+        </div>
+    <main> <!--Основной контент страницы-->
+        <form>
+            <fieldset> <!--Рамка вокруг объекта-->
+                <legend>Регистрация</legend>  <!--Заголовок формы-->
+                <input type="text"name="last-name"><label>Фамилия</label> <!--Поле для текстовой информация-->
+                <input type="text"name="name"><label>Имя</label>
+                <input type="text"name="middle_name"><label>Отчество</label>
+                <p>Девушка<input name="gender" type="radio" value="male"></p> <!--тип radio для выбора-->
+                <p>Парень<input name="gender" type="radio" value="male"></p>
+                <p>Другое<textarea gender="other" cols="40" rows="3"></textarea> </p> <!--textarea для ответа текстом-->
+                <input type="email" id="email"><label>Емеил</label>
+                <input type="data" id="dr"><label>Дата рождения</label>
+                <input type="password" id="password"><label>Придумайте пароль</label> <!--Для пароля-->
+                <input type="password" id="password1"><label>Подтвердите пароль</label>
+                <pre><input type="checkbox"  id="checkbox"></pre> <!--Подтверждение-->
+                <p>Cогласие на обработку персональных данных</p>
+                <input type="submit" value="Зарегистрироваться"> <!--submit для отправки формы-->
+                <input type="reset" value="Сброс"> <!--Удалить содержимое формы-->
+            </fieldset>
+        </form>
+    </main>
+    <footer> <!--Подвал-->
+    <p>Сайт разработан Никитиной Майей &copy; Все права защищены</p>
+    </footer>
+</body>
+</html>

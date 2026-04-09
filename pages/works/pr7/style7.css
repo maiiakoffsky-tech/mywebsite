@@ -1,0 +1,117 @@
+h3 {  
+    color:darkcyan;
+}
+.p1 { 
+    text-align: center; /*Горизонтальное выравнивание, центрировать*/
+}
+.p2 { 
+    text-indent: 200px; /*Отступ в первом строке*/
+}
+.p3 {
+    line-height: 50px; /*Высота строки*/
+}
+.p4 {
+    vertical-align: super; /*Вертикальное выравнивание. Здесь текст как надстрочный*/
+}
+
+.p41 {
+    vertical-align: middle; /*Выравнивает по центру*/
+}
+.p42 {
+    vertical-align: text-bottom; /*Выравнивание нижнего края*/
+}
+.log {
+    vertical-align: auto;
+}
+.alog {
+    vertical-align: sub; /*Выравнивает по линии нижнего индекса*/
+    font-size: 10px;
+}
+.blog {
+    vertical-align: middle; /*Выравнивает по центру*/
+}
+.clog {
+    vertical-align: super; /*Выравнивает по линии верхнего индекса*/
+    font-size: 10px;
+}
+.dlog {
+    vertical-align: middle; /*Выравнивает по центру*/
+}
+.p5 {
+    word-spacing: 20px; /*Расстояние между пробелами*/
+}
+.p6 {
+    letter-spacing: 20px; /*Расстояние между буквами*/
+}
+.p7 {
+    white-space: pre; /*Сохраняет все пробелы и переносы как написаны*/
+}
+.p8 {
+    tab-size: 8; /*Свойство tab-size не поддерживается во всех браузерах, особенно в старых версиях. В некоторых случаях может потребоваться использовать альтернативные техники*/
+}
+.p81 {
+    text-indent: 30px;
+}
+.p9 {
+    text-transform: uppercase; /*Трансформирует текств верхний регистр*/
+}
+.p10 {
+    direction: rtl; /*Направление текста справа налево*/
+}
+#p11 {
+    direction: rtl;
+    unicode-bidi:normal; /*Указывает что право выбора направления остается на браузером*/
+}
+#p12 {
+    text-decoration: underline; /*Декорации для текста*/
+    text-decoration: overline;
+    text-decoration-color:brown;
+}
+#p13:first-letter {  /*Применение стилей к первой букве элемента*/
+    font-size: 2em;
+    margin-right: 2px;
+    color:chocolate;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px white, 1px 1px #9e9d99; /*Наложить тень*/
+}
+#p14 {
+    quotes:'«' '»'; /*Выбор как будут выглядеть кавычки*/
+}
+#p15 {
+    font-family: fantasy; /*Шрифт*/
+}
+#p16 {
+    font-style: oblique; /*Стиль шрифта(тут курсив)*/
+}
+#p17 {
+    font-variant: small-caps; /*Варианты шрифта. Тут символы отображаются как заглавные, но уменьшенные*/
+}
+#p18 {
+    font-weight: bold; /*Жирный шрифт*/
+}
+#p19 {
+    font-size: smaller; /*Шрифт меньше чем у родительского элемента*/
+}
+#p20 {
+    color:magenta; /*Цвет текста*/
+}
+#p21 {
+    font: italic bold 14px/1.5 Times, 'New Century Schoolbook', serif; /*Ряд характеристик*/
+}
+.back { 
+	position: fixed; /*Внешний вид кнопки назад*/
+	width: 100px;
+	text-align: center;
+	bottom: 10px;
+	right: 10px;
+	background-color:chocolate;
+    border-radius: 10px;
+    font-family: fantasy;
+	padding: 10px;
+}	
+.back a { /*Внешний вид самой ссылки*/
+	text-decoration: none; /*Не подчеркивать*/
+	color:black /*Цвет текста черный*/
+}
+
+

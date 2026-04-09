@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+body {
+    font-family: Poppins-Regular;
+    width: 1920px;
+    height: 10px;
+    background: black;
+}
+section {
+    width: 1170px;
+    height: 718px;
+    margin-left: 20%;
+    margin-top: 3%;
+    display: flex; /*Контейнер для артиклей в данном случае*/
+    flex-wrap: wrap; /*Если эл не вмещаются по ширине в одну строку, 
+    то они сами перенесутся вниз*/
+    justify-content: center;
+    color: aliceblue;
+}
+.team {
+    width: 1170px;
+    padding-left: 20px;  
+}
+h3 {
+    font-size: 32px;
+}
+article {
+    width: 378px;  /*ширина блоков*/
+    color: aliceblue; /*Цвет текста в блоках*/
+    text-align: center;
+}
+.name {
+    font-size: 22px;
+    font-weight: bold;
+}
+

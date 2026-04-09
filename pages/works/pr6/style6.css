@@ -1,0 +1,88 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:saddlebrown;
+    font-size: 20px;
+    background-color: bisque;
+}
+header {
+    height: 50px; 
+	width: 100%;
+    text-align: center;
+    background:saddlebrown;
+}
+header li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 0;
+	margin-left: 5px;
+	width: 150px;
+	background-image: url(../img/knopki); /*Фон для пунктов меню*/
+	font-weight: bold; /*Жирный шрифт*/
+	text-align: center;
+}
+header a {
+    text-decoration: none;
+    background-color:saddlebrown;
+    color: antiquewhite;
+    padding-bottom: 1;
+    float: left;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.content { /*Отец для main и aside*/
+    display: flex;
+}
+main {
+    width: 75%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.section { /*Секция для товаров*/
+    display: flex;
+}
+.product1 , .product2 { /*Артикли для товаров в два столбика*/
+    width: 50%;
+    width: 400px;
+    text-align: center;
+    padding: 50px 100px;
+    margin-left: 50px;
+}
+.price { /*Блок для цены*/
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+aside li{
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+}
+aside a {
+    text-decoration: none;
+    color:antiquewhite;
+}
+aside {
+    text-align: center;
+    background: saddlebrown;
+    margin-top: 4px;
+    width: 15%;
+    height: auto;
+}
+.sidebar { /*Блок в сайдбаре для "Полезные страницы"*/
+    color: antiquewhite;
+}
+footer {
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}
+

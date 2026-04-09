@@ -1,0 +1,84 @@
+@font-face { /*Подключаем свои шрифты которых нет в системных архивам штмл чтоб браузер видел их*/
+    font-family: RobotoRegular;
+    src: url("fonts/Roboto/Roboto-Regular.ttf"); /*Путь к файлу с шрифтами*/
+}
+section {
+    display: flex; /*Контейнер для артиклей в данном случае*/
+    flex-wrap: wrap; /*Если эл не вмещаются по ширине в одну строку, 
+    то они сами перенесутся вниз*/
+    justify-content: center;
+}
+article {
+    width: 650px;  /*ширина блоков*/
+    color: aliceblue; /*Цвет текста в блоках*/
+    padding: 72.31px 0 54.94px 67.3px; /*Внутренние отступы от текста*/
+    margin-bottom: 30px; /*Отступ снаружи снизу*/
+    border-radius: 10px;
+}
+article:nth-child(2n-1) { /*Нечетные блоки*/
+    margin-right: 30px; /*Отступ снаружи справа*/
+}
+article h2, article button { /*Заголовки и шрифт в кнопках*/
+    font-family: RobotoRegular; 
+    text-transform: uppercase; /*Сделать верхний регистр у текста(К сожалению только на этом шаге заметила)*/
+}
+article p {
+    width: 310px;
+    font-family: 'Tahoma';
+    font-size: 16px;
+    margin: 1px 0 30px 0;
+}
+article h2 {
+    font-size: 40px;
+    line-height: 42px; /*Высота строки содержащая пустоту по краям и текст по центру*/
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+article .price { /*затрагивает обычный текст от и BYN*/
+    font-family: RobotoRegular;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.price span { /*Сама цена*/
+    font-size: 48px;
+    color: #df59ca;
+    font-weight: bold; /*Жирный шрифт*/
+}
+article button {
+    margin-top: auto;
+    font-size: 18px;
+    background: #f26689;
+    border: 0;
+    padding: 19px 38px;
+    border-radius: px;
+    color: white;
+    font-weight: bold; 
+    cursor: pointer; /*Изменяет вид указателя мыши на руку при наведении на эл*/
+}
+article:nth-child(1) { /*Взять эл-ты являющиеся первым ребенком и дать им свойства*/
+    background: linear-gradient(75.91deg, rgba(50, 34, 67, 0.8) 15.12%, rgba(50, 34, 67, 0) 95.53%), url("img/1.png");
+    /*Наложить градиент на картинку, угол наклона 75.91, Первый rgba - начало, 80% и начинается с 15%, заканчивается в rgba прозрачном 95%*/
+    background-size: cover; /*растянуть фоновое изображение по всей ширине и высоте элемента*/
+}
+article:nth-child(2) {
+    background: linear-gradient(75.91deg, rgba(50, 34, 67, 0.8) 15.12%, rgba(50, 34, 67, 0) 95.53%), url("img/2.png");
+    background-size: cover;
+}
+article:nth-child(3) {
+    background: linear-gradient(75.91deg, rgba(50, 34, 67, 0.8) 15.12%, rgba(50, 34, 67, 0) 95.53%), url("img/3.png");
+    background-size: cover;
+}
+article:nth-child(4) {
+    background: linear-gradient(75.91deg, rgba(50, 34, 67, 0.8) 15.12%, rgba(50, 34, 67, 0) 95.53%), url("img/4.png");
+    background-size: cover;
+}
+li {
+    display: inline;
+    text-align: center;
+    margin-bottom: 50px;
+    list-style-type: none; 
+    font-size: 25px;
+    padding-left: 20px;
+}
+

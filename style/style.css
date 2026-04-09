@@ -1,0 +1,145 @@
+body { 	
+	background-image: url('../img/fon');		
+	font-family: Arial, Helvetica, sans-serif; /*Шрифт без надсечек для всего сайта*/
+	background-size:cover;
+}
+header {
+	height: 200px; /*Высота шапки*/
+	width: 100%; /*Ширина шапки*/
+
+}
+.contact a {
+	text-decoration: none; /*Не подчеркивать меню*/
+	color:darkgreen /*Цвет текста в меню черный*/
+}
+.contact li {
+	list-style: none /*Убираем точки маркеры*/
+}
+.menu a {
+	text-decoration: none; /*Не подчеркивать меню*/
+	color:black /*Цвет текста в меню черный*/
+}
+.menu li {
+	display: inline-block; /*Чтобы меню шло в одну строку*/
+	padding: 5px 0;
+	margin-left: 5px;
+	width: 150px;
+	background-image: url(../img/knopki); /*Фон для пунктов меню*/
+	border-radius: 7px; /*Закругленные углы у пунктов меню*/
+	font-weight: bold; /*Жирный шрифт*/
+	text-align: center;
+}
+.contact {
+	float: right /*Прижать к правому краю, обтекать слева*/
+}
+h1 {
+	text-align: center; /*Центрировать заголовок*/
+}
+h2 {
+	text-align: center;
+	font-size: 36px;
+}
+.add {
+	height: 100px;
+}
+.content {
+display: flex ; /*Контенер для управления расположением контента внутри*/
+}
+.main {
+	width: 80%;
+}
+.skills {
+	display: flex; /*Для управления адаптивными макетами*/
+}
+.skill1, .skill2, .skill3 { /*Навыки с главной*/
+	width: 33%;
+	margin-left: 50px; /*Внешний отступ слева*/
+}
+.courses {
+	display: flex; /*Для управления адаптивными макетами*/
+}
+.course1, .course2 { /*Курсы с главной*/
+	width: 50%;
+	margin-left: 50px;
+}
+aside {
+	width: 20%;
+	height: 805px;
+	background: lightgreen;
+}
+aside a {
+	text-decoration: none; /*Без подчеркивания и других декораций*/
+	color: black;
+}
+aside li {
+	list-style: none; /*Без точек маркеров*/
+	margin-bottom: 10px; /*Отступ снаружи вниз*/
+}
+.right { /*Фотография на странице обо мне*/
+	float: right /*Прижать вправо*/
+}
+form {
+	margin: auto; /*Выравнивает элемент по центру по горизонтали*/
+	width: 400px;
+	height: 500px;
+	background-image: url(../img/form.jpg); /*Фоновое изображение*/
+	font-weight: bold; /*жирный текст*/
+}
+label {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 16px;
+}
+.forma {
+	padding: 50px 100px; /*Отступ*/
+	
+}
+.forma input {
+	width: 200px;
+	font-size: 20px; /*Размер шрифта*/
+	border-radius: 10px; /*Округление для рамки области ввода*/
+	text-align: center;
+}
+.log { /*Класс формы логина*/
+	height: 250px;
+}
+.card { /*Карты настранице map*/
+	margin-left: 30%;
+}
+.photki {
+	text-align: center;
+}
+.top { 
+	position: fixed;
+	width: 100px;
+	text-align: center;
+	bottom: 10px;
+	right: 10px;
+	background-color:chartreuse;
+	padding: 10px;
+}	
+.top a {
+	text-decoration: none; /*Не подчеркивать меню*/
+	color:black /*Цвет текста в меню черный*/
+}
+kbd {
+	font-size: 18px;
+}
+.voiti {
+	float:right
+}
+table {
+	margin-left: 10%;
+	margin-right: 10%;
+	border-collapse: collapse; /*Соединяет соседние рамки ячеек в одну, промежутки между ячейками игнорирует*/
+	width: 80%;
+}
+.table {
+	margin-top: 0;
+}
+.twitter {
+	float: left;
+}
+footer {
+	text-align: center;
+}
+
