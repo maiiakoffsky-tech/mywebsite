@@ -12,29 +12,20 @@ p, h1 {
     margin: 20px auto;
     padding: 0 30px;
 }
-
-/* ПЕРВОЕ изображение (внутри .img) */
-.img {
-    text-align: center;      /* Это центрирует содержимое .img */
-    margin-bottom: 30px;
+.bridge-night {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 100%;
+    height: auto;
 }
-
-.img img.bridge-night {
-    max-width: 100%;         /* Максимум - ширина контейнера */
-    height: auto;            /* Авто высота */
+.bridge-day {
+    float: left;
+    margin: 20px 20px 20px 0;
+    max-width: 40%;
+    min-width: 200px;
 }
-
-/* ВТОРОЕ изображение (без контейнера) */
-img.bridge-day {
-    display: block;          /* Делаем блочным */
-    max-width: 100%;         /* Максимальная ширина */
-    height: auto;            /* Пропорции */
-    margin: 0 auto 30px auto; /* Центрируем: 0 сверху, auto слева/справа, 30 снизу */
-}
-
-/* Ваш медиазапрос */
-@media screen and (min-width: 480px) and (max-width: 800px) {
-    .content {
-        background: lightcoral;
+@media (max-width: 480px) {
+    .bridge-day {
+        max-width: 100%;
     }
 }
