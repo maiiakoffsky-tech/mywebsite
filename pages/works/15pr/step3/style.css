@@ -46,6 +46,14 @@ button:hover {
     cursor: pointer;
 }
 /*ниже нужно написать код для выравнивания элементов*/
-
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:space-around;
+}
+article {
+    width: 480px;
+}
 
 /*------- услуги end ------*/
