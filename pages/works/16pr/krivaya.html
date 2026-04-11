@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>svg</title>
+    <style>
+        svg {
+            border: 1px solid #dddddd;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1. ДУГА (ПОЛУКРУГ) -->
+    <svg width="300" height="100">
+        <path d="M 50 50 A 50 50 0 0 0 150 50" stroke="midnightBlue" stroke-width="5" fill="none" />
+        <!-- M 50 50 - начало -->
+        <!-- A 50 50 - дуга радиусом 50px -->
+        <!-- 0 0 0 - поворот, большая дуга, направление -->
+        <!-- 150 50 - конец -->
+        <!-- sweep-flag=0 → дуга вверх -->
+    </svg>
+
+    <!-- 2. ДУГА ВНИЗ -->
+    <svg width="300" height="100">
+        <path d="M 50 50 A 50 50 0 0 1 150 50" stroke="midnightBlue" stroke-width="5" fill="none" />
+        <!-- sweep-flag=1 → дуга вниз -->
+    </svg>
+
+    <!-- 3. ФЛАГ НА ВЕТРУ -->
+    <svg width="300" height="100">
+        <path d="M 50 50 Q 150 80 250 50" stroke="blue" stroke-width="5" fill="none" />
+        <!-- M 50 50 - начало флага -->
+        <!-- Q 150 80 - контрольная точка (выгибает вниз) -->
+        <!-- 250 50 - конец флага -->
+    </svg>
+
+    <!-- 4. ВОЛНА (ДВА ИЗГИБА) -->
+    <svg width="300" height="100">
+        <path d="M 50 50 Q 100 20 150 50 T 250 50" stroke="green" stroke-width="5" fill="none" />
+        <!-- Q - первый изгиб вверх -->
+        <!-- T - автоматическое отражение для второй половины волны -->
+    </svg>
+
+    <!-- 5. ГАЛОЧКА (МЯГКИЙ УГОЛ) -->
+    <svg width="300" height="100">
+        <path d="M 50 70 Q 100 100 150 40" stroke="teal" stroke-width="5" fill="none" />
+        <!-- Плавный переход вместо острого угла -->
+    </svg>
+
+    <!-- 6. КРЮЧОК (РЫБОЛОВНЫЙ) -->
+    <svg width="300" height="150">
+        <path d="M 50 30 Q 70 100 120 100 A 30 30 0 0 1 150 80" stroke="brown" stroke-width="5" fill="none" />
+        <!-- Q - плавный спуск вниз -->
+        <!-- A - закругление внизу (крючок) -->
+    </svg>
+
+    <!-- 7. СКРУГЛЁННЫЙ УГОЛ (МОСТИК) -->
+    <svg width="300" height="100">
+        <path d="M 50 70 Q 150 20 250 70" stroke="gray" stroke-width="5" fill="none" />
+        <!-- Вместо двух прямых линий - одна плавная кривая (парабола) -->
+    </svg>
+
+</body>
+
+</html>
