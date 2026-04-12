@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мерцающая звезда</title>
+    <style>
+        @keyframes starr {
+            0% {
+                fill: deeppink;                
+            }
+            25% {
+                fill: lightgreen;               
+            }
+            50% {
+                fill: lightblue;                
+            }
+            75% {
+                fill: yellow;                
+            }
+            100% {
+                fill: deeppink;
+            }
+        }
+        .starr {
+            /* 0,3s на цикл × 14 циклов где то 4,2 секунды */
+            animation: starr 0.3s step-end 14; /*Название, длительность, тип, повтор*/
+            filter: drop-shadow(0 0 5px brown); /*тень: смещение, размытие, цвет*/
+        }
+    </style>
+</head>
+<body>
+    <svg width="300" height="300" viewBox="0 0 100 100">
+        <polygon class="starr" points="50,5 55,40 95,45 55,55 50,95 45,55 5,45 45,40" fill="deeppink" stroke="none"/>
+    </svg>
+</body>
+</html>

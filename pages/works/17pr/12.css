@@ -1,0 +1,22 @@
+body {
+    color: #fff;
+    font: 600 24px;
+}
+.box {
+    background: #2db34a;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    display:flex; /*Это мое*/
+    align-items: center; /*Центрировать по вертикали*/
+    justify-content: center; /*Центрировать по горизонтали вместо текст алайн*/
+    transition-property: background, border-radius; /*Плавное изменение фона*/
+    transition-duration: 1s; /*Длительность анимации*/
+    transition-timing-function: linear; /*Анимация как бы стабильная, без замедлений и ускорений*/
+    width: 95px;
+}
+.box:hover { 
+    background: #ff7b29; /*При наведении оранжевый*/
+    border-radius: 50%;
+}
