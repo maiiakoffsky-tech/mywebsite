@@ -26,9 +26,9 @@ figure {
     transform-style: preserve-3d;
 }
 .spin:hover {
-    animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite; /*Название, время, стабильное, бесконечно повторять*/
 }
-@keyframes spin {
+@keyframes spin { /*Обьявление*/
     0% {
         transform: rotateY(0deg);
     }    
@@ -37,10 +37,10 @@ figure {
     }
 }
 .box-1 {
-    transform: translateX(-10px);
+    transform: translateX(-10px); /*сдвигает блок по горизонтали влево*/
 }
 .box-2 {
-    transform: translateY(25%);
+    transform: translateY(25%); /*сдвигает блок по вертикали вниз*/
 }
 .box-3 {
     transform: translate(-10px, 25%);

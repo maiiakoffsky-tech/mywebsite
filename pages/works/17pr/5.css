@@ -12,7 +12,7 @@
         top: 0;
     }
 }
-.stage {
+.stage { /*Сцена*/
     background: #eaeaed;
     border-radius: 6px;
     height: 150px;
@@ -22,8 +22,8 @@
 .stage:hover .ball {
     animation-name: slide;
     animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 5s;
+    animation-timing-function: ease; /*плавное ускорение в начале и замедление в конце*/
+    animation-delay: 5s; /*После 5 секунд*/
 }
 .ball {
     background: #2db34a;

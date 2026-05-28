@@ -1,28 +1,29 @@
 body {
-    font: 600 14px;
+    font: 600 14px; /*Жирность, размер*/
 }
 .card-container {
     cursor: pointer;
     height: 150px;
-    perspective: 600;
-    position: relative;
+    perspective: 600; /*глубина перспективы(Чем меньше число тем сильнее эффект 3D)*/
+    position: relative; /*точка отсчёта для внутренних элементов*/
     width: 150px;
 }
 .card {
     height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: all 1s ease-in-out;
+    position: absolute; /*Типо сквозное оптекание по отношению к др эл*/
+    transform-style: preserve-3d; /*Сохр для дочерних эл*/
+    transition: all 1s ease-in-out; /*Применить ко всем с плавностью*/
     width: 100%;
 }
 .card:hover {
     transform: rotateY(180deg);
-}.card .side {
-    backface-visibility: hidden;
+}
+.card .side {
+    backface-visibility: hidden; /*Видимость задней стороны элемента - скрыть*/
     border-radius: 6px;
     height: 100%;
     position: absolute;
-    overflow: hidden;
+    overflow: hidden; /*Обрезать все если вылезает за границу*/
     width: 100%;
 }
 .card .back {
