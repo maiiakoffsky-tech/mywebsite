@@ -9,6 +9,27 @@
     margin: 0 auto;
     padding: 0 40px;
 }
+.btn-nazad {
+    display: inline-block;
+}
+.btn-nazad a {
+    text-decoration: none;
+    color: #000;
+    background-color: #e0e0e0;
+    padding: 15px 25px;
+    margin-top: 40px;
+    margin-left: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: inline-block;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.btn-nazad a:hover {
+    background-color: #d0d0d0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
 body {
     font-family: 'Arial', sans-serif;
     background: #dbdbdb;
@@ -85,7 +106,7 @@ nav a {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     padding: 15px 0;
     min-width: 180px;
-    list-style: none;
+    list-style: none;    
     z-index: 100;
     border-radius: 4px;
 }

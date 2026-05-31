@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1E2A3A;
+    color: #FFFFFF;
+    font-family: 'Unbounded', sans-serif;
+    overflow-x: hidden;
+    padding-bottom: 70px;
+}
+header {
+    position: absolute;
+    z-index: 10;
+}
+
+.logoimg {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
+header {
+    position: relative;
+    width: 100%;
+}
+
+.logocont {
+    position: absolute;
+    top: 10x;
+    left: 10px;
+    z-index: 10;
+}
+
+.logoimg {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
+
+.headerr {
+    width: 100%;
+}
+
+.headimg {
+    width: 100%;
+}
+
+.headimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.aboutwee {
+    padding: 20px;
+}
+
+.aboutwee h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.aboutwee p {
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.whywee {
+    padding: 0 20px 20px;
+}
+
+.whywee h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.advcard {
+    width: 100%;
+    min-height: 100px;
+    background: #FBD687;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.advcard span {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.photocard {
+    position: relative;
+    overflow: hidden;
+}
+
+.photocard img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.photocard span {
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+}
+
+/* ===== УСЛУГИ (горизонтальный скролл) ===== */
+.services {
+    padding: 0 20px 20px;
+}
+
+.services h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.services-scroll {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 0 20px 15px 20px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.service-card {
+    min-width: 240px;
+    max-width: 280px;
+    background: #1A3E57;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.service-card h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #FFF;
+    text-align: center;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.service-card ul li {
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFF;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 12px;
+}
+
+.service-card ul li::before {
+    content: "✅";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    font-size: 9px;
+}
+
+.servfoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servfoot .btn {
+    background: #8B0000;
+    color: #FFF;
+    border: none;
+    padding: 6px 16px;
+    font-size: 11px;
+    font-family: 'Unbounded', sans-serif;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.servfoot .price {
+    font-size: 14px;
+    color: #FFF;
+}
+/* ===== ФУТЕР ===== */
+footer {
+    background: #0A0D17;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pricee {
+    font-size: 7px;
+    line-height: 9px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 7px;
+    line-height: 9px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.region {
+    font-size: 7px;
+    line-height: 9px;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.socialwrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    background: #FFFFFF;
+    border-radius: 30px 0px 30px 0px;
+    padding: 8px 20px;
+    width: 166px;
+    height: 42px;
+    margin: 10px 0 0 auto;  /* прижимаем вправо */
+}
+
+.socicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.socicon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.socicon:hover img {
+    transform: scale(1.1);
+}
+/* ===== НИЖНЯЯ НАВИГАЦИЯ (фиксированная) ===== */
+.navv {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #1E2A3A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #2A3A4A;
+}
+
+.navitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #8A9AA8;
+    font-size: 10px;
+    transition: color 0.3s;
+}
+
+.navicon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-bottom: 2px;
+}
+
+.navitem.active {
+    color: #FBD687;
+}
+
+.navitem.active .navicon {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(30%) saturate(500%) hue-rotate(0deg) brightness(105%) contrast(90%);
+}
+
+.navitem:hover {
+    color: #FBD687;
+}
+
+/* ===== СТРАНИЦА КОНСУЛЬТАЦИЯ ===== */
+.conspage {
+    background: conic-gradient(from 134.41deg at 56.25% 48.96%, #1E2A3A 0deg, #715277 91.73deg, #6570A2 120.51deg, #6374A7 124.37deg, #6278AC 127.62deg, #5F80B8 135.53deg, #5C86C1 141.82deg, #598DCC 148.61deg, #5688C3 177deg, #3A587C 201.58deg, #263548 247.73deg, #1A3E57 291.22deg, #1E2A3A 360deg);
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.constittle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.conssub {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    max-width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formcomt {
+    background: rgba(62, 95, 163, 0.4);
+    border: 1px solid rgba(62, 95, 163, 0.01);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 311px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.forminp {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.forminp:focus {
+    border-color: #FBD687;
+    color: #FFFFFF;
+}
+
+.forminp::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.formtxtarea {
+    width: 100%;
+    height: 105px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
+.formtxtarea:focus {
+    border-color: #FBD687;
+    color: #FFFFFF;
+}
+
+.formtxtarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.submitbtn {
+    background: #FBD687;
+    border: none;
+    border-radius: 10px;
+    width: 181px;
+    height: 44px;
+    margin: 20px auto 0;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitbtn:hover {
+    background: #e8c56d;
+}
+
+/* ===== СТРАНИЦА РЕЗУЛЬТАТА ===== */
+.respage {
+    background: #1E2A3A;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.restittle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ressub {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    max-width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rescard {
+    background: #1A3E57;
+    border-radius: 6px;
+    padding: 15px;
+    max-width: 320px;
+    margin: 0 auto 30px;
+}
+
+.resitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.reslabel {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.resvalue {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.resansw {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resansw p {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.resrec {
+    margin-top: 15px;
+}
+
+.resrec p {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.resrec ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.resrec ul li {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 3px;
+}
+
+.resrec ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #FFFFFF;
+}
+
+.resbtn {
+    display: block;
+    background: #FBD687;
+    border: none;
+    border-radius: 10px;
+    width: 181px;
+    height: 44px;
+    margin: 0 auto;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    color: #0A0D17;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resbtn:hover {
+    background: #e8c56d;
+}
+
+/* ===== СТРАНИЦА ИСТОРИИ ===== */
+.hispage {
+    background: #1E2A3A;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.histittle {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hissub {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    max-width: 286px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hiscard {
+    background: #1A3E57;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 324px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hisstate {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.statuscon {
+    font-size: 16px;
+}
+
+.statustxt {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.hisitem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.hislabel {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.hisvalue {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.hisansw {
+    margin-top: 5px;
+}
+
+.hisansw p {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.hisliink {
+    display: block;
+    text-align: right;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3575FF;
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor: pointer;
+}
